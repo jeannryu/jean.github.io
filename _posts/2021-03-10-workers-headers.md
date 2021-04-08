@@ -8,7 +8,7 @@ tags: cloudflare workers
 lang: en
 ---
 
-{% highlight ruby %}
+{% highlight javascript %}
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
@@ -25,9 +25,8 @@ response = new Response(response.body, response)
   response.headers.set("cf-workers", 'script_name')
   response.headers.set("cf-url", request.url)
   response.headers.set("cf-cache-ttl", 'defined_ttl')
-  response.headers.set("cf-failover-origin", 'origin_host')
-}
-
+  response.headers.set("cf-failover-origin", 'origin_host') 
+  }
 return response
-
-}{% endhighlight %}
+}
+{% endhighlight %}
