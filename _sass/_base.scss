@@ -31,7 +31,7 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote, pre, table, 
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
@@ -214,4 +214,37 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * table style Fri 20 Jan 23
+ */
+
+.tablestyle table {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.tablestyle th {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #1b3453;
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid #1b3453;
+}
+.tablestyle th {
+    padding: 10px 15px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    background: #f3f6f7;
+}
+.tablestyle td {
+    padding: 10px 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    text-align: start;
 }
