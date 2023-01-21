@@ -6,11 +6,14 @@ order: 3
 ---
 
 <div class="home">
+  {% assign i = 0 %}
+  {% assign posts=site.posts | where:"lang", page.lang %}
+  {% for post in posts %}     {% assign i = i | plus: 1 %}  {% endfor %}
 
-  <h1 class="page-heading">포스트</h1>
+  <h1 class="page-heading">{{ i }} 포스트</h1>
 
   <ul class="post-list">
-    {% assign posts=site.posts | where:"lang", page.lang %}
+
     {% for post in posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
