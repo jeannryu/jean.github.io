@@ -82,24 +82,3 @@ lang: en
 {:.tablestyle}
 
 <a href="#">top</a>
-
-# Cloudflare's CASB integration with Salesforce and Box
-
-| |
-{:.tablestyle}
-
-<a href="#">top</a>
-
-# API-based email scanning
-# Expanding our Microsoft collaboration: proactive and automated Zero Trust security for customers
-# Announcing SCIM support for Cloudflare Access & Gateway
-# China Express: Cloudflare partners to boost performance in China for corporate networks
-# Cloudflare Application Services for private networks: do more with the tools you already love
-# Cloudflare Zero Trust for managed service providers
-# Give us a ping. (Cloudflare) One ping only.
-# CIO Week 2023 recap
-# Cloud CNI privately connects your clouds to Cloudflare
-# A debugging story: corrupt packets in AF_XDP; a kernel bug or user error?
-# Three new winners of Project Jengo, and more defeats for the patent troll
-# Introducing Waiting Room Bypass Rules
-# Internet disruptions overview for Q4 2022
