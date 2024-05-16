@@ -3,7 +3,9 @@ GEM
   specs:
     kramdown (2.3.1)
       rexml
-    rexml (3.2.5)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
+    strscan (3.1.0)
 
 PLATFORMS
   ruby
