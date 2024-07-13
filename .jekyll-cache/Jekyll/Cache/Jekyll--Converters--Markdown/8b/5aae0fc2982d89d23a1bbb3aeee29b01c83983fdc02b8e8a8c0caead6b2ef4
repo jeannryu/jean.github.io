@@ -1,0 +1,2 @@
+I"ÿ<p><a href="https://blog.jeann.net/cloudflare/workers/2020/04/20/country-redirect-en.html">Other than country-based language page redirection,</a> you may want to read <code class="language-plaintext highlighter-rouge">accept-language</code> header from the request headers instead. Itâ€™ll give better information of individuals - if a person connecting from Korea actually prefers English or French, you would want to serve his or her language instead of Korean. This header will reflect the information.</p>
+:ET

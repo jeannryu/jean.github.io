@@ -1,0 +1,54 @@
+I"�<p>짧은 깃헙 팁.</p>
+
+<h1 id="시스템에서-깃헙-유저-깔끔하게-변경">시스템에서 깃헙 유저 깔끔하게 변경</h1>
+
+<p>깃헙 아이디를 여러 개 쓸 때 어떤 아이디로 커밋/푸시를 하는지는</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name username1
+git config --global user.email your@email.com
+</code></pre></div></div>
+
+<p>–로 업데이트 하면 된다.</p>
+
+<p>잘 바뀌었는지는 아래 커맨드로 확인하면 됨.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --list
+</code></pre></div></div>
+
+<p>문제: <code class="language-plaintext highlighter-rouge">username2</code> 에서 <code class="language-plaintext highlighter-rouge">username1</code> 로 계정을 제대로 바꾸고 확인도 했는데 자꾸 이 에러가 나와요. 왜 나의 로컬 환경은 자꾸 <code class="language-plaintext highlighter-rouge">username2</code>를 시도하나요?</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">remote: Permission to myrepo.git denied to username2.</code></pre></figure>
+
+<p>솔루션: <a href="https://superuser.com/questions/1064197/how-to-switch-git-user-at-terminal"><code class="language-plaintext highlighter-rouge">username2</code>로 로컬에 저장된 키체인을 지워준다.</a></p>
+
+<p>끝!</p>
+
+<p>하는 김에</p>
+
+<h1 id="kramdown-업데이트하기-cve-2021-28834">Kramdown 업데이트하기 (CVE-2021-28834)</h1>
+
+<p>Kramdown 버전을 <code class="language-plaintext highlighter-rouge">2.3.1</code> 로 올리라는 알림이 귀찮을 경우… 아래 순서대로 업데이트한다.</p>
+
+<p>Github Page에 Gem이고 Kramdown이 없는 경우 <a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html">이 페이지의 <code class="language-plaintext highlighter-rouge">Install Bundler</code>부터 확인하면서 Gemfile을 만들어 준다.</a> (Mac OS용 설명만 나와 있음.)</p>
+
+<p>깃헙 페이지 디렉토리에서 <code class="language-plaintext highlighter-rouge">bundle init</code>하면 Gemfile이 생기는데, 여기서 Gemfile 안에</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem "kramdown", "&gt;=2.3.1"
+</code></pre></div></div>
+
+<p>를 추가해준 후 <code class="language-plaintext highlighter-rouge">bundle install</code> 하면 <code class="language-plaintext highlighter-rouge">gemfile.lock</code> 안에 Kramdown 버전이 명시되어 만들어지고, 터미널에서도 잘 됐다고 알려줌.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Installing rexml 3.2.5
+Using kramdown 2.3.1
+Bundle <span class="nb">complete</span><span class="o">!</span> 1 Gemfile dependency, 3 gems now installed.
+Use <span class="sb">`</span>bundle info <span class="o">[</span>gemname]<span class="sb">`</span> to see where a bundled gem is installed.</code></pre></figure>
+
+<p>다음은 만들어진 Gemfile과 Gemfile.lock을 스테이징하고, 커밋하고, 푸시하고 머지하면 CVE 해결.</p>
+
+<p>Gem 설치 과정에서</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     You don't have write permissions for the /usr/bin directory.
+</code></pre></div></div>
+
+<p>퍼미션 문제가 있을 경우 이 커맨드 <a href="https://stackoverflow.com/questions/2893889/how-do-i-fix-the-you-dont-have-write-permissions-into-the-usr-bin-directory"><code class="language-plaintext highlighter-rouge">sudo gem install cocoapods -n /usr/local/bin</code></a> 를 대신 사용해도 된다.</p>
+:ET
