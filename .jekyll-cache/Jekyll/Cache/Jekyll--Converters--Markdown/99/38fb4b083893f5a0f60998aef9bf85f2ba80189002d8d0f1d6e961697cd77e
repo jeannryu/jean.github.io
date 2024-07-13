@@ -1,0 +1,22 @@
+I"^<p>This shell script will help you to “bulk register” domains to kickstart using Cloudflare DNS, using the API documented here: <a href="https://api.cloudflare.com/#zone-create-zone">https://api.cloudflare.com/#zone-create-zone</a></p>
+
+<p>Firstly, make sure you have <code class="language-plaintext highlighter-rouge">zones.txt</code> in your working directory, with domain you would like to signup with Cloudflare separated by enter key, like;</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">firstdomain</span><span class="p">.</span><span class="nf">com</span>
+<span class="n">seconddomain</span><span class="p">.</span><span class="nf">co</span><span class="p">.</span><span class="nf">kr</span>
+<span class="n">thirddomain</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">au</span>
+<span class="n">fourthdomain</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">ph</span>
+<span class="n">fifthdomain</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">sg</span></code></pre></figure>
+
+<p>Then run this script.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">_email</span><span class="o">=</span><span class="s2">"&lt;YOUR_EMAIL&gt;"</span>
+<span class="n">_key</span><span class="o">=</span><span class="s2">"&lt;API_KEY&gt;"</span>
+<span class="n">_account</span><span class="o">=</span><span class="s2">"&lt;ACCOUNT_ID&gt;"</span>
+<span class="n">_type</span><span class="o">=</span><span class="s2">"full"</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="sb">`cat zones.txt`</span><span class="p">;</span><span class="k">do</span> <span class="n">curl</span> <span class="o">-</span><span class="no">X</span> <span class="no">POST</span> <span class="s2">"https://api.cloudflare.com/client/v4/zones"</span> <span class="o">-</span><span class="no">H</span> <span class="s2">"X-Auth-Email: ${_email}"</span> <span class="o">-</span><span class="no">H</span> <span class="s2">"X-Auth-Key:${_key}"</span> <span class="o">-</span><span class="no">H</span> <span class="s2">"Content-Type: application/json"</span> <span class="o">--</span><span class="n">data</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">name</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">$i</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:{</span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">$_account</span><span class="se">\"</span><span class="s2">},</span><span class="se">\"</span><span class="s2">jump_start</span><span class="se">\"</span><span class="s2">:true,</span><span class="se">\"</span><span class="s2">type</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">$_type</span><span class="se">\"</span><span class="s2">}"</span> <span class="o">|</span> <span class="n">jq</span><span class="p">;</span> <span class="n">done</span><span class="p">;</span></code></pre></figure>
+
+<p>Cloudflare provides <a href="https://support.cloudflare.com/hc/en-us/articles/360020348832-Understanding-a-CNAME-Setup">CNAME setup</a> as well, if you want to bulk signup using CNAME setup you can simply change <code class="language-plaintext highlighter-rouge">_type="full"</code> part to <code class="language-plaintext highlighter-rouge">_type="partial"</code>. However, in order to use API signup with CNAME setup Cloudflare team should allow it first, so I <em>guess</em> bulk CNAME signup is for enterprise plan only.</p>
+
+:ET

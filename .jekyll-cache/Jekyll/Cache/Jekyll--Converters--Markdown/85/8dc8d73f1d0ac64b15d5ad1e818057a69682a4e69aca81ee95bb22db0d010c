@@ -1,0 +1,2 @@
+I" <p>이 스크립트는 Cloudflare가 Spectrum 호스트별로 동적 할당하는 IP주소를 모니터링하여 Network Analytics상에서 보이는 Flood 공격이 정확히 어떤 호스트로 향하고 있는지 판단하기 위해서 활용할 수 있습니다. 스크립트는:</p>
+:ET

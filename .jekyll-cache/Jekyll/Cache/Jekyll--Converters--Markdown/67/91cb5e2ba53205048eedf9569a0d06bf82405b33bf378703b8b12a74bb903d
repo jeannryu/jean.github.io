@@ -1,0 +1,205 @@
+I"�9<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>No.</td>
+      <td>Topic</td>
+      <td>Tags</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><a href="#one-click-data-security-for-your-internal-and-saas-applications">One-click data security for your internal and SaaS applications</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare Access</code> <code class="language-plaintext highlighter-rouge">RBI</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">VDI</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#improved-access-controls-api-access-can-now-be-selectively-disabled">Improved access controls: API access can now be selectively disabled⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Access Control</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#how-cloudflare-casb-and-dlp-work-together-to-protect-your-data">How Cloudflare CASB and DLP work together to protect your data</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">CASB</code> <code class="language-plaintext highlighter-rouge">DLP</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#how-cloudflare-area-1-and-dlp-work-together-to-protect-data-in-email">How Cloudflare Area 1 and DLP work together to protect data in email🕶</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Security</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#email-link-isolation-your-safety-net-for-the-latest-phishing-attacks">Email Link Isolation: your safety net for the latest phishing attacks⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Email</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">RBI</code> <code class="language-plaintext highlighter-rouge">Links</code></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#zone-versioning-is-now-generally-available">Zone Versioning is now generally available⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Zone Versioning</code> <code class="language-plaintext highlighter-rouge">Rules</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#cloudflares-casb-integration-with-salesforce-and-box">Cloudflare’s CASB integration with Salesforce and Box</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">CASB</code> <code class="language-plaintext highlighter-rouge">Cloudflare CASB</code> <code class="language-plaintext highlighter-rouge">Product News</code></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#api-based-email-scanning">API-based email scanning</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Security</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#expanding-our-microsoft-collaboration-proactive-and-automated-zero-trust-security-for-customers">Expanding our Microsoft collaboration: proactive and automated Zero Trust security for customers</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Microsoft</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Partners</code> <code class="language-plaintext highlighter-rouge">Product News</code></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="#announcing-scim-support-for-cloudflare-access--gateway">Announcing SCIM support for Cloudflare Access &amp; Gateway</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare Access</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="#china-express-cloudflare-partners-to-boost-performance-in-china-for-corporate-networks">China Express: Cloudflare partners to boost performance in China for corporate networks</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">SASE</code> <code class="language-plaintext highlighter-rouge">China</code> <code class="language-plaintext highlighter-rouge">China Network</code></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="#cloudflare-application-services-for-private-networks-do-more-with-the-tools-you-already-love">Cloudflare Application Services for private networks: do more with the tools you already love</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Magic WAN</code> <code class="language-plaintext highlighter-rouge">Network as a Service</code></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="#cloudflare-zero-trust-for-managed-service-providers">Cloudflare Zero Trust for managed service providers</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare Gateway</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="#give-us-a-ping-cloudflare-one-ping-only">Give us a ping. (Cloudflare) One ping only.</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Private Network</code> <code class="language-plaintext highlighter-rouge">Cloudflare Tunnel</code></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="#cio-week-2023-recap">CIO Week 2023 recap</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Security</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Cloudflare Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="#cloud-cni-privately-connects-your-clouds-to-cloudflare">Cloud CNI privately connects your clouds to Cloudflare</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Network as a Service</code> <code class="language-plaintext highlighter-rouge">Cloudflare Network Interconnect</code> <code class="language-plaintext highlighter-rouge">CNI</code></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="#a-debugging-story-corrupt-packets-in-af_xdp-a-kernel-bug-or-user-error">A debugging story: corrupt packets in AF_XDP; a kernel bug or user error?</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Deep Dive</code> <code class="language-plaintext highlighter-rouge">Linux</code> <code class="language-plaintext highlighter-rouge">Networking</code> <code class="language-plaintext highlighter-rouge">Debugging</code></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="#three-new-winners-of-project-jengo-and-more-defeats-for-the-patent-troll">Three new winners of Project Jengo, and more defeats for the patent troll</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Jengo</code> <code class="language-plaintext highlighter-rouge">Legal</code> <code class="language-plaintext highlighter-rouge">Patents</code> <code class="language-plaintext highlighter-rouge">Patent Troll</code> <code class="language-plaintext highlighter-rouge">Sable</code></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><a href="#introducing-waiting-room-bypass-rules">Introducing Waiting Room Bypass Rules</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Waiting Room</code> <code class="language-plaintext highlighter-rouge">Virtual Queue</code> <code class="language-plaintext highlighter-rouge">Rules</code> <code class="language-plaintext highlighter-rouge">Waiting Room Rules</code></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><a href="#internet-disruptions-overview-for-q4-2022">Internet disruptions overview for Q4 2022</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Cloudflare Radar</code> <code class="language-plaintext highlighter-rouge">Internet Traffic</code> <code class="language-plaintext highlighter-rouge">Outage</code> <code class="language-plaintext highlighter-rouge">Internet Shutdown</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="one-click-data-security-for-your-internal-and-saas-applications">One-click data security for your internal and SaaS applications</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>Cloudflare RBI and Access will work together, letting any user to access internal applications without the risk of data being exfiltrated. <a href="https://www.cloudflare.com/lp/application-isolation-beta/">Waiting List</a> <a href="https://blog.cloudflare.com/one-click-zerotrust-isolation/">Blog</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#">top</a></p>
+
+<h1 id="improved-access-controls-api-access-can-now-be-selectively-disabled">Improved access controls: API access can now be selectively disabled</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>Not everyone needs to be an API admin. Now as a superadmin you can enable or disable each member’s Cloudflare API access. (caveat) you need <code class="language-plaintext highlighter-rouge">domain scoped roles</code> enabled for the below screenshot view. <a href="https://blog.cloudflare.com/improved-api-access-control/">Blog</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://blog.cloudflare.com/content/images/2023/01/image1-30.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>⭐️ The more granularity, the merrier.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- UI Not showing up. Asking the team https://chat.google.com/room/AAAA-v9ItSI/kAdjgubnrc4 -->
+
+<p><a href="#">top</a></p>
+
+<h1 id="how-cloudflare-casb-and-dlp-work-together-to-protect-your-data">How Cloudflare CASB and DLP work together to protect your data</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>CASB &amp; DLP new capabilities are coming! This integration will answer the automatic detection of sensitive data in cloud collaboration files, like: Credit card numbers in a Google Doc, social security numbers in an Excel spreadsheet. When? The blog says <code class="language-plaintext highlighter-rouge">Coming in early 2023</code>🤭 <a href="https://blog.cloudflare.com/casb-dlp/">Blog</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#">top</a></p>
+
+<h1 id="how-cloudflare-area-1-and-dlp-work-together-to-protect-data-in-email">How Cloudflare Area 1 and DLP work together to protect data in email</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>Cloudflare Email Security (Area 1) works together with DLP to address the most critical email security use cases. <a href="https://blog.cloudflare.com/dlp-area1-to-protect-data-in-email/">Blog</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://blog.cloudflare.com/content/images/2023/01/image2-17.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#">top</a></p>
+
+<h1 id="email-link-isolation-your-safety-net-for-the-latest-phishing-attacks">Email Link Isolation: your safety net for the latest phishing attacks</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>Cloudflare Email Security evaluates suspicious links in the email and takes the corresponding action - safe links open in the local browser as if they hadn’t been changed, while malicious links are prevented from opening altogether. The malicious links will be opened remotely in isolated environment and users will be protected! <a href="https://blog.cloudflare.com/area1-eli-ga/">Blog</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://blog.cloudflare.com/content/images/2023/01/image2-16.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>⭐️even if you’re security aware sometimes you mistakenly open bad links. Great safenet!</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#">top</a></p>
+
+<h1 id="zone-versioning-is-now-generally-available">Zone Versioning is now generally available</h1>
+
+<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>I’m so happy that you do not need the <a href="/cloudflare/onboarding/2020/05/31/cloudflare-staging-environment.html">staging environment set up</a> anymore, as now you can do it with zone versioning. Deploying at staging for sufficient tests, quick roll back to previous versions, now do it at version management! <a href="https://blog.cloudflare.com/zone-versioning-ga/">Blog</a></td>
+    </tr>
+    <tr>
+      <td><stream src="b446962fb9dc37405018ef588ed92444" controls="" preload=""></stream><br /><script data-cfasync="false" defer="" type="text/javascript" src="https://embed.videodelivery.net/embed/r4xu.fla9.latest.js?video=b446962fb9dc37405018ef588ed92444"></script></td>
+    </tr>
+    <tr>
+      <td>⭐️important Akam*i migration requirement!</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#">top</a></p>
+:ET

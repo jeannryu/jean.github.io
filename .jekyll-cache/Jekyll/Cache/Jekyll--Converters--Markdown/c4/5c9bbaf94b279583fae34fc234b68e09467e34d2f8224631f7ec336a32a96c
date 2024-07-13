@@ -1,0 +1,32 @@
+I"V<p><a href="https://blog.jeann.net/cloudflare/workers/2020/04/20/country-redirect-en.html">Other than country-based language page redirection,</a> you may want to read <code class="language-plaintext highlighter-rouge">accept-language</code> header from the request headers instead. It’ll give better information of individuals - if a person connecting from Korea actually prefers English or French, you would want to serve his or her language instead of Korean. This header will reflect the information.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">fetch</span><span class="dl">'</span><span class="p">,</span> <span class="nx">event</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span><span class="nx">langChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">))</span>
+<span class="p">})</span>
+
+<span class="k">async</span> <span class="kd">function</span> <span class="nx">langChange</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="kd">const</span> <span class="nx">clientCountry</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">CF-IPCountry</span><span class="dl">'</span><span class="p">)</span>
+  <span class="kd">const</span> <span class="nx">acceptLanguage</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">Accept-Language</span><span class="dl">'</span><span class="p">)</span> <span class="o">||</span> <span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">accept-language</span><span class="dl">'</span><span class="p">)</span> <span class="o">||</span> <span class="dl">''</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept-Language: </span><span class="dl">"</span><span class="o">+</span><span class="nx">acceptLanguage</span><span class="p">)</span>
+  <span class="kd">const</span> <span class="nx">lang</span> <span class="o">=</span> <span class="nx">acceptLanguage</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">||</span> <span class="dl">''</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Language Decision: </span><span class="dl">"</span><span class="o">+</span><span class="nx">lang</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span><span class="o">==</span><span class="dl">'</span><span class="s1">en</span><span class="dl">'</span><span class="p">)</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/en.html</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span><span class="o">==</span><span class="dl">'</span><span class="s1">fr</span><span class="dl">'</span><span class="p">)</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/fr.html</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span><span class="o">==</span><span class="dl">'</span><span class="s1">ko</span><span class="dl">'</span><span class="p">)</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/ko.html</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span><span class="o">==</span><span class="dl">'</span><span class="s1">ja</span><span class="dl">'</span><span class="p">)</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/ja.html</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span><span class="o">==</span><span class="dl">'</span><span class="s1">zh</span><span class="dl">'</span><span class="p">)</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/zh.html</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">else</span> <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://blog.jeann.net/en.html</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<p>This is my personal template. You can feel free to re-use under your responsibility but please note Cloudflare Solutions Engineers do not:</p>
+
+<ul>
+  <li>Deploy code on customer’s production environment</li>
+  <li>Commit to any liability regarding the proper behaviour/logic of the code</li>
+  <li>Provide code review of customer’s scripts</li>
+</ul>
+
+:ET
