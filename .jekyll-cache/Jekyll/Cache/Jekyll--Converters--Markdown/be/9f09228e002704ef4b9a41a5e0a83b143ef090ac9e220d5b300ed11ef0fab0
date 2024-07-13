@@ -1,0 +1,85 @@
+I"�<table class="tablestyle">
+  <tbody>
+    <tr>
+      <td>No.</td>
+      <td>Topic</td>
+      <td>Tags</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><a href="#how-cloudflare-can-help-stop-malware-before-it-reaches-your-app">How Cloudflare can help stop malware before it reaches your app⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">waf</code> <code class="language-plaintext highlighter-rouge">security</code> <code class="language-plaintext highlighter-rouge">malware</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#welcome-to-cio-week-2023">Welcome to CIO Week 2023</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Digital Transformation</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Network as a Service</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#weave-your-own-global-private-virtual-zero-trust-network-on-cloudflare-with-warp-to-warp">Weave your own global, private, virtual Zero Trust network on Cloudflare with WARP-to-WARP</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Private Network</code> <code class="language-plaintext highlighter-rouge">WARP</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#cloudflare-is-faster-than-zscaler">Cloudflare is faster than Zscaler</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Speed</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#bring-your-own-certificates-to-cloudflare-gateway">Bring your own certificates to Cloudflare Gateway</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare Gateway</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Gateway</code> <code class="language-plaintext highlighter-rouge">BYOPKI</code></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#introducing-digital-experience-monitoring">Introducing Digital Experience Monitoring</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Private Network</code> <code class="language-plaintext highlighter-rouge">Digital Experience Monitoring</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#cloudflare-ddos-threat-report-for-2022-q4">Cloudflare DDoS threat report for 2022 Q4</a></td>
+      <td><code class="language-plaintext highlighter-rouge">DDoS</code> <code class="language-plaintext highlighter-rouge">Cloudflare Radar</code> <code class="language-plaintext highlighter-rouge">DDos Report</code> <code class="language-plaintext highlighter-rouge">insight</code> <code class="language-plaintext highlighter-rouge">trends</code></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#preview-any-cloudflare-product-today">Preview any Cloudflare product today⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Product News</code> <code class="language-plaintext highlighter-rouge">Product Preview</code></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#announcing-custom-dlp-profiles">Announcing Custom DLP profiles⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Data Loss Prevention</code> <code class="language-plaintext highlighter-rouge">DLP</code> <code class="language-plaintext highlighter-rouge">Secure Web Gateway</code></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="#cloudflare-protection-for-all-your-cardinal-directions">Cloudflare protection for all your cardinal directions</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Network as a Service</code> <code class="language-plaintext highlighter-rouge">Magic WAN</code></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="#network-detection-and-settings-profiles-for-the-cloudflare-one-agent">Network detection and settings profiles for the Cloudflare One agent⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">WARP</code></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="#new-ways-to-troubleshoot-cloudflare-access-blocked-messages">New ways to troubleshoot Cloudflare Access ‘blocked’ messages</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare Access</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="#announcing-the-magic-wan-connector-the-easiest-on-ramp-to-your-next-generation-network">Announcing the Magic WAN Connector: the easiest on-ramp to your next generation network</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Network as a Service</code> <code class="language-plaintext highlighter-rouge">Magic WAN Connector</code></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="#why-do-cios-choose-cloudflare-one">Why do CIOs choose Cloudflare One?⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">SASE</code></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="#announcing-the-authorized-partner-service-delivery-track-for-cloudflare-one">Announcing the Authorized Partner Service Delivery Track for Cloudflare One⭐️</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CIO Week</code> <code class="language-plaintext highlighter-rouge">SASE</code> <code class="language-plaintext highlighter-rouge">Zero Trust</code> <code class="language-plaintext highlighter-rouge">Cloudflare One</code> <code class="language-plaintext highlighter-rouge">Magic WAN</code></td>
+    </tr>
+  </tbody>
+</table>
+:ET

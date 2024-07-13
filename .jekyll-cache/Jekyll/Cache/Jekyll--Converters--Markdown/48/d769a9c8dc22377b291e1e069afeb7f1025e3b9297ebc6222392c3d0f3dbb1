@@ -1,0 +1,5 @@
+I"¢
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">fetch</span><span class="dl">'</span><span class="p">,</span> <span class="nx">event</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span><span class="nx">handleRequest</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">))</span>
+<span class="p">})</span></code></pre></figure>
+:ET

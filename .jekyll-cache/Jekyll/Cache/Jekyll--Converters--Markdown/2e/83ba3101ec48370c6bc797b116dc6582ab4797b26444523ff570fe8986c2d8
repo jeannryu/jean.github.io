@@ -1,0 +1,68 @@
+I"<p>이 스크립트는 Cloudflare가 Spectrum 호스트별로 동적 할당하는 IP주소를 모니터링하여 Network Analytics상에서 보이는 Flood 공격이 정확히 어떤 호스트로 향하고 있는지 판단하기 위해서 활용할 수 있습니다. 스크립트는:</p>
+
+<ol>
+  <li>
+    <p>Cloudflare account에 등록된 모든 도메인(zone)을 불러오고</p>
+  </li>
+  <li>
+    <p>각각 도메인(zone)에 등록된 Spectrum host를 모두 불러오고</p>
+  </li>
+  <li>
+    <p>그 host에 각각 할당된 IP를 쿼리하여 리턴합니다.</p>
+  </li>
+</ol>
+
+<p>Cloudflare API를 활용하므로 이용하시는 유저의 Cloudflare Account ID, email, global API key를 입력하셔야 합니다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#!/bin/bash</span>
+
+<span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> 
+<span class="n">cnt</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+
+  <span class="n">echo</span> <span class="s2">"Account ID?"</span>
+  <span class="n">read</span> <span class="n">accountID</span>
+ 
+  <span class="n">echo</span> <span class="s2">"Your email?"</span>
+  <span class="n">read</span> <span class="n">email</span>
+
+  <span class="n">echo</span> <span class="s2">"Your API Key?"</span>
+  <span class="n">read</span> <span class="n">apikey</span>
+
+<span class="nb">printf</span> <span class="s2">"Now reading the whole zone list in the account...</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">;</span> 
+
+<span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="no">X</span> <span class="no">GET</span> <span class="s2">"https://api.cloudflare.com/client/v4/zones?page=1&amp;per_page=100&amp;account.id=$accountID"</span> <span class="o">--</span><span class="n">header</span> <span class="s1">'Content-Type: application/json'</span> <span class="o">--</span><span class="n">header</span> <span class="s2">"X-Auth-Email: $email"</span> <span class="o">--</span><span class="n">header</span> <span class="s2">"X-Auth-Key: $apikey"</span> <span class="o">|</span> <span class="n">jq</span> <span class="o">-</span><span class="n">r</span> <span class="s1">'.result[].id'</span> <span class="o">&gt;</span> <span class="n">zone</span><span class="p">.</span><span class="nf">list</span>
+
+<span class="nb">printf</span> <span class="s2">"Now reading hosts registered in Spectrum app...</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> 
+
+<span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="sb">`cat zone.list`</span><span class="p">;</span> <span class="k">do</span> <span class="n">curl</span> <span class="o">-</span><span class="n">ks</span> <span class="no">GET</span> <span class="s2">"https://api.cloudflare.com/client/v4/zones/$x/spectrum/apps?page=1&amp;per_page=20&amp;direction=desc&amp;order=protocol"</span> <span class="o">--</span><span class="n">header</span> <span class="s2">"X-Auth-Email: $email"</span> <span class="o">--</span><span class="n">header</span> <span class="s2">"X-Auth-Key: $apikey"</span> <span class="o">--</span><span class="n">header</span> <span class="s1">'Content-Type: application/json'</span> <span class="o">|</span> <span class="n">jq</span> <span class="o">-</span><span class="n">r</span> <span class="s1">'.result[].dns.name'</span> <span class="o">|</span> <span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="n">spectrumapp</span><span class="p">.</span><span class="nf">list</span><span class="p">;</span> <span class="n">done</span><span class="p">;</span>
+
+<span class="nb">printf</span> <span class="s2">"</span><span class="se">\n</span><span class="s2"> Now reading IP assigned to each Spectrum app...</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> 
+<span class="nb">printf</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">==========================================================================================</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span> 
+
+<span class="k">for</span> <span class="n">dom</span> <span class="k">in</span> <span class="sb">`cat spectrumapp.list`</span><span class="p">;</span> <span class="k">do</span> 
+  <span class="n">i</span><span class="o">=</span><span class="err">$</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">));</span>   
+
+  <span class="k">if</span> <span class="p">[</span> <span class="s2">"$sub"</span> <span class="o">!=</span> <span class="s2">""</span> <span class="p">];</span> <span class="k">then</span> <span class="n">host</span><span class="o">=</span><span class="s2">"$(echo $sub.$dom)"</span>
+  <span class="k">else</span> <span class="n">host</span><span class="o">=</span><span class="s2">"$(echo $dom)"</span>
+  <span class="n">fi</span>
+
+  <span class="n">ip</span><span class="o">=</span><span class="s2">"$(dig A @1.1.1.1 +short $host.cdn.cloudflare.net | tail -1)"</span>
+  <span class="k">if</span> <span class="p">[</span> <span class="s2">"$ip"</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">];</span> <span class="k">then</span> <span class="n">edge</span><span class="o">=</span><span class="s2">"$(echo "</span><span class="n">host</span> <span class="n">does</span> <span class="n">not</span> <span class="n">exist</span><span class="s2">")"</span>
+  <span class="k">else</span> <span class="n">edge</span><span class="o">=</span><span class="s2">"$(/usr/bin/whois -h whois.cymru.com $ip | tail -1)"</span>
+  <span class="n">fi</span>
+
+  <span class="k">if</span> <span class="p">[</span> <span class="vg">$i</span> <span class="o">-</span><span class="n">lt</span> <span class="mi">10</span> <span class="p">];</span> <span class="k">then</span> <span class="n">echo</span> <span class="vg">$i</span> <span class="s2">" ----- "</span> <span class="vg">$dom</span> <span class="s2">"|"</span> <span class="vg">$edge</span>
+  <span class="n">elif</span> <span class="p">[</span> <span class="vg">$i</span> <span class="o">-</span><span class="n">lt</span> <span class="mi">100</span> <span class="p">];</span> <span class="k">then</span> <span class="n">echo</span> <span class="vg">$i</span> <span class="s2">" ---- "</span> <span class="vg">$dom</span> <span class="s2">"|"</span> <span class="vg">$edge</span>
+  <span class="n">elif</span> <span class="p">[</span> <span class="vg">$i</span> <span class="o">-</span><span class="n">lt</span> <span class="mi">1000</span> <span class="p">];</span> <span class="k">then</span> <span class="n">echo</span> <span class="vg">$i</span> <span class="s2">" --- "</span> <span class="vg">$dom</span> <span class="s2">"|"</span> <span class="vg">$edge</span>
+  <span class="n">fi</span> 
+
+<span class="n">done</span><span class="p">;</span>
+
+<span class="nb">printf</span> <span class="s2">"==========================================================================================</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">;</span>
+
+<span class="n">rm</span> <span class="n">zone</span><span class="p">.</span><span class="nf">list</span>
+<span class="n">rm</span> <span class="n">spectrumapp</span><span class="p">.</span><span class="nf">list</span>
+
+<span class="nb">printf</span> <span class="s2">"Job completed.</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span></code></pre></figure>
+
+:ET
