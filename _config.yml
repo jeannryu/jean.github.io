@@ -7,12 +7,12 @@
 
 # Site settings
 title:
-  index: Jean Ryu
-  en: blog.jeann.net
-  ko: blog.jeann.net
-  fr: blog.jeann.net
-  zh: blog.jeann.net
-  ja: blog.jeann.net
+  index: Jean's Note
+  en: Jean's Note
+  ko: Jean의 노트
+  fr: Son petit cahier
+  zh: 她的笔记
+  ja: 彼女のノート
 subtitle:
   en: jeannryu.github.io
   ko: jeannryu.github.io
@@ -21,12 +21,12 @@ subtitle:
   ja: jeannryu.github.io
 email: jeann.tech@gmail.com
 description:
-  index: Welcome to Jean's personal blog. I may intend to disseminate some technical knowledges but do cross-check with the official document for up-to-date information because I don't maintain this blog as my daily work.
+  index: 
   en: 
-  ko: 개인 블로그입니다. 적고 싶은 기술이야기를 적습니다만 업무의 일환으로 관리하지 않습니다.
-  fr: Parce que je viens de commencer à apprendre le français, vous pouvez trouver des erreurs grammaticales dans mon écriture.
-  zh: 我这儿练习我的中文。 
-  ja: 日本語の勉強のためのブログです。
+  ko: 
+  fr: 
+  zh: 
+  ja: 
 index:
   en: en.html
   ko: ko.html
@@ -38,7 +38,7 @@ feed:
   ko: /feed-ko.xml
   fr: /feed-fr.xml
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.jeann.net" # the base hostname & protocol for your site
+url: "https://jeanryu.github.io" # the base hostname & protocol for your site
 linkedin_username: jeannryu
 github_username: jeannryu
 instagram_username: jeannryu

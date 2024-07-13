@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Le défi français des 100 jours"
+title:  "écrions quelque chose en francais"
 ref:  20201221b
 date:   2020-12-21 12:00:00 +0800
 categories: study language

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cloudflare Digests of My Own 🙋🏻‍♀️ CIO Week 2nd (19)"
+title:  "2023 CIO Week Updates 2"
 ref:  20230120
 date:   2023-01-20 08:00:00 +0100
 categories: cloudflare

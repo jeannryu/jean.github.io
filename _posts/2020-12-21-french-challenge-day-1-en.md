@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "French Challenge Day 1 - 21 December"
+title:  "French 21 December"
 ref:  20201221a
 date:   2020-12-21 23:59:00 +0800
 categories: study language

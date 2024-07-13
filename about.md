@@ -7,6 +7,16 @@ lang: en
 order: 1
 ---
 
+Hi! I am Jean. Thank you for visiting my note.
+
+I am a Channel/Partner Solutions Engineer at Cloudflare, and a young leader of a team.
+
+I am very keen to connect with fellow Channel/Partner Solutions Engineers, and exchange learning.
+
+If you are the one, [would you mind a chat with me?](../worklog/2024/04/15/channel-se.html)
+
+<!---
+
 # Jean Ryu
 
 A good day to you! My name is Jean Ryu and I love solving problems with proper solutions.
@@ -30,3 +40,5 @@ Outside of work, I enjoy spending time in learning new languages. I am native in
 - Internet Resources: DNS, IPv4/IPv6, Registry/Registrar
 
 [travel-map]: https://www.mytravelmap.xyz/u/fb1018132231568410;jsessionid=D0E35A020D608DACACBC2805D33A5434?0
+
+-->
