@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Le défi français jour 6 - le 27 Décembre"
+title:  "écrions quelque chose - le 27 Décembre"
 ref:  20201227a
 date:   2020-12-27 20:00:00 +0800
 categories: study language

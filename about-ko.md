@@ -6,9 +6,16 @@ lang: ko
 order: 3
 ---
 
+이 노트는 이런저런 개인 프로젝트와 취미생활을 기록하기 위해 만든 공간입니다.
+
+리더십에 대해 공부하며 끄적끄적 적기도 하고, 회사 일에 대해 메모하기도 하고, 프랑스어 공부나 프랑스에서의 삶 이야기를 적기도 합니다.
+
+<!--
 # Jean Ryu
 
-안녕하세요. 방문 감사드립니다. 저는 열심히 살아보려는 평범한 개인입니다. 강원도 춘천에서 나고 자라 서울에서 공부하였고, [한국인터넷진흥원][krnic] DNS/IP주소 파트에서 5년여간 근무한 후 2017년부터는 싱가포르로 이주하여 [Cloudflare][cloudflare]라는 회사에서 Solutions Engineer로 일하고 있습니다.
+안녕하세요. 방문 감사드립니다. 
+
+강원도 춘천에서 나고 자라 서울에서 공부하였고, [한국인터넷진흥원][krnic] DNS/IP주소 파트에서 5년여간 근무한 후 2017년부터는 싱가포르로 이주하여 [Cloudflare][cloudflare]라는 회사에서 Solutions Engineer로 일하고 있습니다. 
 
 이 블로그는 이런저런 개인 프로젝트와 취미생활을 기록하기 위해 만든 공간으로, Github Page와 Jekyll, Cloudflare가 이용되었습니다. 블로그의 다국어 지원 기능은 [Sylvain Durand][jekyll-multilingual] 님의 프로젝트를 참고하여 플러그인 없이 구축되었고 [Cloudflare Workers][cf-workers]를 이용하여 라우팅되고 있습니다.
 
@@ -17,3 +24,5 @@ order: 3
 [cf-network]: https://www.cloudflare.com/network
 [jekyll-multilingual]: https://www.sylvaindurand.org/making-jekyll-multilingual/
 [cf-workers]: /cloudflare/workers/2020/04/20/country-redirect-ko.html
+
+-->

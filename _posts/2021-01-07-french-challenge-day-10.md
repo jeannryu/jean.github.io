@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Le défi français jour 10 - le 7 Janvier"
+title:  "écrions quelque chose - Le 7 Janvier"
 ref:  20210107a
 date:   2021-01-07 22:00:00 +0800
 categories: study language

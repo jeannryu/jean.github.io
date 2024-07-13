@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "100 Days Challenge - French Writing"
+title:  "I shall challenge myself to write something in French!"
 ref:  20201221b
 date:   2020-12-21 12:00:00 +0800
 categories: study language
