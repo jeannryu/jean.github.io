@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "프랑스 이야기 - 빈털털이"
+title:  "열쇠, 핸드폰, 지갑 없이 바깥에 남겨지다"
 ref:  20240705a
 date:   2024-07-05 12:00:00 +0200
 categories: lifelog
