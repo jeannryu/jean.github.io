@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "프랑스 인생 2년 3개월 6일차 - 빈털털이"
+title:  "프랑스 이야기 - 빈털털이"
 ref:  20240705a
 date:   2024-07-05 12:00:00 +0200
 categories: lifelog
 tags: language français
 lang: ko
 ---
+
+프랑스 인생 2년 3개월 6일차
 
 불어를 못 하는데 폰도 열쇠도 지갑도 아무 것도 없이 멍뎅하게 바깥에 홀로 남겨지다!
 
