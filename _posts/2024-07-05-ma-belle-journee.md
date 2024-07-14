@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ma belle journée en France 🩷🔒🔑 - Le 5 Julliet"
+title:  "Ma belle journée en France 🩷🔒🔑"
 ref:  20240705a
 date:   2024-07-05 12:00:00 +0200
 categories: studylog
