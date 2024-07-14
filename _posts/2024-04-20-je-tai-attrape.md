@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "J'ai attrapé Jamal avant son vol🇦🇺🇰🇷✈️"
-ref:  20240420a
-date:   2024-04-20 12:00:00 +0200
+ref:  20240512a
+date:  2024-05-12 12:00:00 +0200
 categories: studylog
 tags: language français
 lang: fr
