@@ -4,6 +4,37 @@ ref: home
 lang: index
 ---
 
+
+<div class="home">
+  {% assign i = 0 %}
+  {% assign posts=site.posts | where:"lang", page.lang %}
+  {% for post in posts %}     {% assign i = i | plus: 1 %}  {% endfor %}
+
+  <h1 class="page-heading">{{ i }} Posts</h1>
+   
+  <ul class="post-list">
+    {% for post in posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+<!--
+  7월 19일, workers redirection 복구할 때까지 영문 페이지를 첫페이지로 하기 위해 기존 인덱스를 주석처리함
+---
+layout: default
+ref: home
+lang: index
+---
+
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
@@ -24,3 +55,4 @@ lang: index
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+-->
